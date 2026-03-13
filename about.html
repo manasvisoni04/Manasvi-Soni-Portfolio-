@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Manasvi Soni</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .about-content {
+            margin-top: 120px;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+        }
+
+        .bio-section {
+            display: flex;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .bio-text {
+            flex: 1;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+
+        .bio-text p {
+            margin-bottom: 1.4rem;
+        }
+
+        .bio-stats {
+            flex: 0.8;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .stat-card {
+            padding: 2rem;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        .stat-number {
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: var(--secondary-accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .timeline-item {
+            width: 100%;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-left: 55%;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-right: 55%;
+            text-align: right;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            width: 18px;
+            height: 18px;
+            background: var(--accent-color);
+            border-radius: 50%;
+            box-shadow: 0 0 15px var(--accent-glow);
+        }
+
+        .timeline-content {
+            padding: 2rem;
+            border-radius: 20px;
+            width: 45%;
+        }
+
+        .timeline-date {
+            color: var(--secondary-accent);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .bio-section {
+                flex-direction: column;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item:nth-child(odd) .timeline-content,
+            .timeline-item:nth-child(even) .timeline-content {
+                width: calc(100% - 60px);
+                margin-left: 60px;
+                text-align: left;
+            }
+
+            .timeline-dot {
+                left: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bg-animated">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav class="navbar glass">
+        <div class="logo">
+            <a href="index.html">Portfolio</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <main class="section-padding">
+        <div class="container about-content">
+
+            <div class="text-center">
+                <h1 class="section-title">About Me</h1>
+                <p class="section-subtitle">
+                    AI & Data Science student driven by curiosity, consistency, and real-world learning.
+                </p>
+            </div>
+
+            <section class="bio-section">
+                <div class="bio-text">
+                    <p>
+                        I’m <strong>Manasvi Soni</strong>, an AI and Data Science student with a growing interest in
+                        data analysis, visualization, and intelligent systems. I enjoy working on practical projects
+                        that turn raw data into meaningful insights.
+                    </p>
+                    <p>
+                        I completed my schooling in <strong>2023</strong>, achieving strong academic performance
+                        in both Class 10 and Class 12, building a solid foundation in mathematics,
+                        logic, and analytical thinking.
+                    </p>
+                    <p>
+                        Currently, I am pursuing an <strong>integrated dual degree (B.Tech + M.Tech)</strong> in
+                        <strong>Artificial Intelligence and Data Science</strong> (2023–2028). Alongside academics,
+                        I actively work on dashboards, data-driven projects, and continuously explore emerging
+                        technologies in the AI domain.
+                    </p>
+                </div>
+
+                <div class="bio-stats">
+                    <div class="stat-card glass-panel">
+                        <div class="stat-number">2028</div>
+                        <div>Degree Completion</div>
+                    </div>
+                    <div class="stat-card glass-panel">
+                        <div class="stat-number">AI</div>
+                        <div>& Data Science</div>
+                    </div>
+                    <div class="stat-card glass-panel">
+                        <div class="stat-number">2+</div>
+                        <div>Projects Completed</div>
+                    </div>
+                    <div class="stat-card glass-panel">
+                        <div class="stat-number">∞</div>
+                        <div>Learning Mindset</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mt-4">
+                <h2 class="section-title text-center" style="margin-bottom: 4rem;">
+                    Education Journey
+                </h2>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass">
+                            <div class="timeline-date">2023 – 2028</div>
+                            <h3>Integrated B.Tech + M.Tech (AI & Data Science)</h3>
+                            <p style="color: var(--text-secondary); margin-top: 10px;">
+                                Pursuing an integrated dual degree with a focus on artificial intelligence,
+                                data analytics, machine learning fundamentals, and applied problem-solving.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass">
+                            <div class="timeline-date">2023</div>
+                            <h3>Class 12 – Higher Secondary</h3>
+                            <p style="color: var(--text-secondary); margin-top: 10px;">
+                                Completed senior secondary education with strong academic performance,
+                                strengthening concepts in mathematics and analytical reasoning.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass">
+                            <div class="timeline-date">2021</div>
+                            <h3>Class 10 – Secondary School</h3>
+                            <p style="color: var(--text-secondary); margin-top: 10px;">
+                                Completed Class 10 with strong academic performance, developing a solid academic base
+                                and disciplined learning approach.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="glass-footer">
+        <p>&copy; 2026 Manasvi Soni. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/manasvisoni04" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/manasvi-soni-6963aa28a/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
